@@ -150,7 +150,7 @@ header{
     }
     .text{
       color:white;
-      width:80%;
+      width:90%;
     }
 
 
@@ -185,15 +185,23 @@ header{
         margin:10px;
       }
     .const-feature button{
+      font-family: fantasy;
+      font-weight: bolder;
       width:150px;
       max-width:100%;
-      padding:10px 20px;
+      padding:13px 20px 10px;
       background-color: rgb(6, 1, 17);
       color:rgb(255, 223, 40);
       border-radius: 30px;
-      border:1.5px solid rgb(255, 223, 40);
+      border:1.5px solid rgb(255, 201, 40);
       margin-top: 10%;
+      transition: 0.3s all ease-out;
     }
+      .const-feature button:hover{
+        transform: rotate(-1deg );
+        background-color:rgb(255, 201, 40);
+        color:rgb(65, 3, 65);
+      }
   .const-card{
     flex:1;
     background-color: rgba(57, 57, 56, 0.202);
@@ -203,6 +211,7 @@ header{
     align-items:center;
     border-radius: 20px;
     max-height: 400px;
+    cursor: pointer;
     transition: 0.4s all ;
   }
     .const-card:hover{
@@ -239,7 +248,8 @@ header{
       align-items:center;
       justify-content:center;
       gap:3%;
-      width:90%;
+      width:300px;
+      max-width:90%;
       margin-left:4%;
       margin-top:2%;
     }
@@ -276,19 +286,29 @@ header{
         }
 
   .see-all{
-    height:fit-content;
-    align-items:center;
-    margin-top:auto;
-    margin-bottom:auto; 
-    justify-content:center;
-    margin-left: 1%;
-    border:1.3px solid #ffd700;
-    border-radius:50%;
-    transition: 0.4s all ease-in-out;
+    display:flex;
+    /* width:2% ; */
+    align-items: center;
+    justify-content: center;
   }
-    .see-all :hover{
-      transform:translateX(20px);
-
+    .see-all a{
+      background-color: transparent;
+      border: 1px solid #ffd700;
+      color:#dfbb88;
+      font-size:19px;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 6px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.3s all ease-in-out;
+    }
+    .see-all a:hover{
+      transform: translateX(4px);
+      background-color: #dfbb88;
+      color: #393027;
     }
 
 .middle{
@@ -333,7 +353,6 @@ header{
 }
 
 /* RIGHT CONTENT */
-
 .about-content {
     display: grid;
     grid-template-columns: 1.5fr 0.9fr;
@@ -499,10 +518,11 @@ header{
     font-size: 15px;
     border-radius: 25px;
     text-decoration: none;
-    transition: 0.5s all ease;
+    transition: 0.3s all;
   }
   .steer-button:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
+    box-shadow: 0px 0px 25px rgba(255, 120, 120, 0.851);
   }
     /* right img */
     .steer-img{
@@ -528,4 +548,119 @@ header{
       transform: rotate(-8deg);
       font-variant: small-caps;
 
+    }
+
+/* Footer */
+
+.footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 40px 8% 10px;
+    border-top: 2px solid #d4af37;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-bottom: 35px;
+}
+
+/* Footer Sections */
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Website Name */
+.footer-about h2 {
+    color: #d4af37;
+    font-size: 25px;
+    margin: 0;
+    font-family: 'georgia', serif;
+}
+
+.footer-about h2 span {
+    color:white;
+    font-size: 33px;
+    font-family: cursive;
+  }
+
+.footer-about p {
+    line-height: 1.5;
+    max-width: 250px;
+}
+
+/* Headings */
+.footer-box h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin: 0;
+    text-decoration:underline;
+}
+
+/* Links */
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  .footer-box li {
+      margin-bottom: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.2s;
+}
+  .footer a:hover {
+      color: #d4af37;
+  }
+
+/* Paragraphs */
+.footer-box p {
+    margin: 0;
+    line-height: 1.7;
+    
+}
+
+/* Social Media */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Btm Footer */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+  .footer-bottom p {
+      margin: 0;
+      font-size: 14px;
+  }
+
+  .footer-policy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+    .footer-policy a {
+        font-size: 14px;
     }

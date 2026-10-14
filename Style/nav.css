@@ -34,7 +34,17 @@
   .nav-tab{
     flex:auto;
     color:white;
+    font-size:medium;
+    font-weight: lighter;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     }
+      .nav-tab a{
+        color:white;
+        text-decoration: none;
+      }
+        .nav-tab a:hover{
+          color:rgb(255, 224, 100);
+        }
 .search{
   display:flex;
   flex:1;
@@ -51,7 +61,7 @@
     border:none;
     border-radius: 20px;
   }
-  .bi-bi-search
+  .bi-bi-search     /*search-icon*/
   {
     color:white;
   }
