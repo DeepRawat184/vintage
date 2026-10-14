@@ -3,7 +3,10 @@
   <link rel="stylesheet" href="Style/about.css";>
    <link rel="stylesheet" href="Style/nav.css">
    <link rel="stylesheet" href="Style/index-header.css">
-   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
    
     <style>
 
@@ -11,7 +14,7 @@
 
 
    </head>
-   <body>
+  <body>
 	  <div class="top">
 
       <div class="logo">
@@ -61,17 +64,19 @@
         </div>
 
         <div class="hero-button">
-          <button class="explore">Explore Cars 
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="margin-left:2%;"><path fill="#ffffff" d="m18 12l.354-.354l.353.354l-.353.354zm-12 .5a.5.5 0 0 1 0-1zm8.354-4.854l4 4l-.708.708l-4-4zm4 4.708l-4 4l-.708-.708l4-4zM18 12.5H6v-1h12z"/></svg>            
-
-          </button>
+          <!-- <button class="explore"> -->
+            <a class="explore" href="About.html">
+            Explore Cars 
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="margin-left:2%;"><path fill="#ffffff" d="m18 12l.354-.354l.353.354l-.353.354zm-12 .5a.5.5 0 0 1 0-1zm8.354-4.854l4 4l-.708.708l-4-4zm4 4.708l-4 4l-.708-.708l4-4zM18 12.5H6v-1h12z"/></svg>
+          </a>            
+          <!-- </button> -->
           
           
-          <button class="how">How It Works  
+          <!-- <button class="how"> -->
+            <a class="how" href="contact.html">How It Works  
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24". style="margin-left:5%;"><mask id="lineMdSpeedometerLoop0"><path fill="none" stroke="#ffff" stroke-dasharray="46" stroke-dashoffset="46" stroke-linecap="round" stroke-width="2" d="M21 13C21 8.02944 16.9706 4 12 4C7.02944 4 3 8.02944 3 13C3 17.9706 7.02944 22 12 22" transform="rotate(45 12 13)"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="46;92"/></path><g fill-opacity="0" transform="rotate(-100 12 13)"><path d="M12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14Z"><animate fill="freeze" attributeName="d" begin="0.4s" dur="0.2s" values="M12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14Z;M17 13C17 15.7614 14.7614 18 12 18C9.23858 18 7 15.7614 7 13C7 10.2386 12 -2 12 -2C12 -2 17 10.2386 17 13Z"/></path><path fill="#fff" d="M12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14Z"><animate fill="freeze" attributeName="d" begin="0.4s" dur="0.2s" values="M12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14Z;M15 13C15 14.6568 13.6569 16 12 16C10.3431 16 9 14.6568 9 13C9 11.3431 12 2 12 2C12 2 15 11.3431 15 13Z"/></path><set attributeName="fill-opacity" begin="0.4s" to="1"/><animateTransform attributeName="transform" begin="0.6s" dur="6s" repeatCount="indefinite" type="rotate" values="-100 12 13;65 12 13;65 12 13;65 12 13;30 12 13;10 12 13;0 12 13;35 12 13;55 12 13;65 12 13;75 12 13;15 12 13;-20 12 13;-100 12 13"/></g></mask><rect width="24" height="24" fill="gold" mask="url(#lineMdSpeedometerLoop0)"/></svg>
-
-          </button>
+            </a>
+          <!-- </button> -->
         </div>
       </section>
     </header>
@@ -277,11 +282,6 @@
       </div>
 
 
-
-
-
-<!--  -->
-
       <div class="see-all">
         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24"><path fill="#ffd700" d="m18 12l.354-.354l.353.354l-.353.354zm-12 .5a.5.5 0 0 1 0-1zm8.354-4.854l4 4l-.708.708l-4-4zm4 4.708l-4 4l-.708-.708l4-4zM18 12.5H6v-1h12z"/></svg>
       </div>
@@ -289,57 +289,125 @@
     </div>
     
 
-    <section class="middle">
 
-      <div class="car-garage">
-        
-        <img src="pic/car-garage.jpeg" alt="car in garage">
-      
+    <!-- ABOUT-->
+    <section class="about-section">
+
+        <!-- LS img-->
+        <div class="about-image">
+            <img src="pic/garage.jpeg"
+                alt="Vintage car with a man standing beside it">
+        </div>
+
+        <!-- RS cont. -->
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <p class="about-label">
+                    ABOUT VINTAGE GARAGE
+                </p>
+
+                <h2>
+                    PRESERVING<br>
+                    AUTOMOTIVE LEGENDS
+                </h2>
+
+                <p class="about-description">
+                    We are more than just a marketplace —
+                    we are a community of dreamers, collectors
+                    and enthusiasts who share a passion for
+                    timeless automobiles. Our mission is to
+                    keep these legends alive by making them
+                    accessible, valuable and part of a new
+                    generation's story.
+                </p>
+
+                <a href="About.html" class="about-button">
+                    Our Story <span>&#x2192</span>
+                </a>
+
+            </div>
+
+            <!-- Stats -->
+            <div class="about-stats">
+
+                <div class="stat-item">
+                    <span class="stat-icon">&#10023</span>
+
+                    <div>
+                        <h3>10,000+</h3>
+                        <p>CLASSIC CARS LISTED</p>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-icon">&#10023</span>
+
+                    <div>
+                        <h3>50,000+</h3>
+                        <p>ACTIVE MEMBERS</p>
+                    </div>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-icon">&#10023</span>
+
+                    <div>
+                        <h3>25+</h3>
+                        <p>COUNTRIES WORLDWIDE</p>
+                    </div>
+                </div>
+
+                <p class="stats-footer">
+                    REAL CARS. REAL PEOPLE. REAL PASSION.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="steering-section">
+
+          <!-- left side -->
+
+      <div class="steer-content">
+
+        <p class="steer-buy_sell">
+          Buy | Sell
+        </p>
+
+        <h2>
+          THE ULTIMATE PLATFORM FOR CLASSIC CAR ENTHUSIASTS
+        </h2>
+
+        <P class="steer-description">
+          Whether you're looking to buy your dream car, 
+          sell a prized possesion - we've got you covered.
+        </P>
+
+        <a href="cars.html" class="steer-button">
+          Get Started <span>&#x2192</span>
+        </a>
+
       </div>
 
-      <div class="about-story">
-
-        <p>ABOUT VINTAGE GARAGE</p>
-        <h2>PRESERVING AUTOMOTIVE LEGENDS</h2>
-        <P>We are more than just a marketplace - 
-          we are a community of dreamers, collectors and enthusiasts who share a passion for timeless 
-        automobiles. Our mission is to keep these legends alive by making them accessible, 
-        valuable and part of a new generation's story</P>
-
-        <button >Our Story <img src="arrow"> </button>
-
-      </div>
-
-      <div class="about-garage">
-
-        <p>10,000+</p>
-        <p>CLASSIC CARS LISTED</p>
-        
-        <p>50,000+</p>
-        <P>ACTIVE MEMBERS</P>
-
-        <P>25+</P>
-        <p>COUNTRIES WORLDWIDE</p>
-
-        <P>REAL CAR, REAL PEOPLE, REAL PASSION</P>
+      <!-- image -->
+      <div class="steer-img">
+        <p class="steer-quote">
+          More <br>
+          Than Just<br>
+          Cars
+        </p>
 
       </div>
 
     </section>
-
-    <section class="platform">
-      
-      <!-- <img src="background-img of steering wheel"> Background -->
-      Choose |Buy |Sell
-      <h2>THE ULTIMATE PLATFORM <br> FOR CLASSIC CAR <br> ENTHUSIASTS</h2>
-      <p>Whether you're looking to buy your dream car or sell a prized possession -
-         we've got you covered</p>
-
-      <button> Get Started -></button>
-
-    </section>
+    <!-- last section close -->
 
 
-    
-    </html>
-    </body>
+
+  </body>
+</html>

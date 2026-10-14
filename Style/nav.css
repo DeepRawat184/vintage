@@ -80,4 +80,9 @@
   .login button svg{
     display:block;
   }
-  
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
