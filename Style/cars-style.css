@@ -20,7 +20,7 @@ a:hover
 .section-heading h2 {
     color: var(--cream);
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 3.5vw, 44px);
+    font-size: 40px;
     font-weight: 600;
     line-height: 1.1;
     margin-bottom: 12px;
@@ -44,7 +44,10 @@ a:hover
         rgba(5, 8, 9, 0.98) 0%,
         rgba(5, 8, 9, 0.84) 38%,
         rgba(5, 8, 9, 0.2) 100%),
-        url('../pic/car-car1 Large.jpeg') bottom / cover no-repeat;
+        url('../pic/car-car1 Large.jpeg') ;
+    background-position : bottom ;
+    background-repeat: no-repeat;
+    background-size: cover;
         border-top: 1px solid rgb(184, 184, 184);
     border-bottom: 1px solid rgba(179, 148, 107, 0.463);
 }
