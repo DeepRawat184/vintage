@@ -50,7 +50,7 @@ section {
             rgba(3, 12, 13, 0.85) 35%,
             rgba(3, 12, 13, 0.15) 75%
         ),
-        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=90");
+        url('../pic/headlight.jpg');
 
     background-size: cover;
     background-position: center;
@@ -83,7 +83,7 @@ section {
 
 .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(36px, 4.6vw, 57px);
+    font-size:50px ;
     line-height: 0.98;
     font-weight: 600;
     letter-spacing: 1px;
@@ -91,7 +91,7 @@ section {
 
 .hero h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(20px, 2.5vw, 29px);
+    font-size: 25px;
     font-style: italic;
     color:  #f0c58c;
     font-weight: 500;
@@ -145,13 +145,6 @@ section {
 
 
 /*  SEARCH SECTION */
-
-.search-section {
-    padding: 0 5.5%;
-    position: relative;
-    z-index: 2;
-}
-
 .search-box {
     background-color: rgba(5, 17, 18, 0.97);
     border: 1px solid rgba(215, 165, 104, 0.45);
@@ -262,7 +255,7 @@ section {
 }
 
 
-/* COMMON SECTION STYLING */
+/* COMMON SEC. STYLING */
 
 .section-padding {
     padding: 35px 5.5%;
@@ -281,7 +274,7 @@ section {
 .confidence-content h2,
 .contact-intro h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(24px, 2.6vw, 32px);
+    font-size:  30px;
     line-height: 1.15;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -291,46 +284,45 @@ section {
     margin-bottom: 4px;
 }
 
-.text-link {
-    color:  #f0c58c;
-    font-size: 10px;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    white-space: nowrap;
-    transition: color 0.3s ease;
-}
-
-.text-link:hover {
-    color: white;
-}
-
 
 /* FEATURED CARS  */
+.featured-section{
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(215, 165, 104, 0.35);
+  box-shadow: 0px 0px 22px rgba(209, 170, 226, 0.95);
+}
 
 .cars-layout {
     display: flex;
     align-items: stretch;
     gap: 14px;
+    background-color: rgb(28, 27, 27);
+    padding: 5px;
+    border-radius: 6px;
 }
 
 .car-list {
-    flex: 1 1 0;
+    flex: 1 1 ;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
+    align-content:center;
 }
 
 .car-card {
-    flex: 1 1 175px;
-    min-width: 0;
+    flex: 1 1 175px; 
     background-color:#091719;
     border: 1px solid #374142;
     border-radius: 7px;
-    transition: border-color 0.3s ease,
+    transition:
                 transform 0.3s ease;
+    height: fit-content;
 }
 
-.car-card:hover {
+.car-card:hover,
+.request-card:hover
+ {
     border-color:  #d7a568;
     transform: translateY(-3px);
 }
@@ -338,19 +330,21 @@ section {
 .car-image {
     height: 115px;
     position: relative;
-    overflow: hidden;
     background-color: #172120;
 }
 
 .car-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.4s ease;
+    margin-top: 3px;
 }
 
 .car-card:hover 
-.car-image img {
+.car-image img ,
+.request-card:hover .request-card img
+{
     transform: scale(1.05);
 }
 
@@ -428,6 +422,7 @@ section {
     color: #15100a;
 }
 
+
         /* REQUEST A CAR CARD  */
 .request-card {
     flex: 0 1 190px;
@@ -436,9 +431,9 @@ section {
     flex-direction: column;
     border: 1px solid #374142;
     border-radius: 7px;
-    overflow: hidden;
     background-color: #080e0f;
     text-align: center;
+    transition: 0.3s ease all;
 }
 
 .request-card img {

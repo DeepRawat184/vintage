@@ -172,7 +172,7 @@ color: #d4af37;
     background-color:#efd4a2;
     border-color: #efd4a2;
     box-shadow: 4px 4px 22px rgba(255, 255, 255, 0.511) ;
-    transform:translateX(12px)
+    transform:translateX(12px);
 }
 
 
@@ -369,7 +369,7 @@ color: #d4af37;
     justify-content: center;
     width: 48px;
     height: 48px;
-    border: 1px solid var(--gold);
+    border: 1px solid transparent;
     border-radius: 50%;
     font-size: 25px;
     margin: 0 auto 12px;
