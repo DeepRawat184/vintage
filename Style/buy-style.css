@@ -187,9 +187,9 @@ section {
     background-color: #071113;
     border: 1px solid #394344;
     border-radius: 5px;
-    color: #f4eee5;
+    color: rgb(218, 214, 208);
     padding: 8px 10px;
-    font-size: 10px;
+    font-size: 14px;
     outline: none;
 }
 
@@ -288,9 +288,9 @@ section {
 /* FEATURED CARS  */
 .featured-section{
   margin: 1%;
-  padding: 1%;
+  padding: 5px;
   background-color: rgba(215, 165, 104, 0.35);
-  box-shadow: 0px 0px 22px rgba(209, 170, 226, 0.95);
+  box-shadow: 0px 0px 20px rgba(169, 127, 28, 0.9);
 }
 
 .cars-layout {
@@ -315,8 +315,7 @@ section {
     background-color:#091719;
     border: 1px solid #374142;
     border-radius: 7px;
-    transition:
-                transform 0.3s ease;
+    transition: transform 0.3s ease;
     height: fit-content;
 }
 
@@ -484,41 +483,40 @@ section {
 }
 
 
-/*  HOW IT WORKS 
+/*  HOW IT WORKS  */
 
 .how-section {
-    border-top: 1px solid rgba(215, 165, 104, 0.2);
-    border-bottom: 1px solid rgba(215, 165, 104, 0.2);
+    border-top: 1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid rgb(240, 240, 240);
     background-color: #071314;
+    margin: 10px 0px;
 }
 
 .steps-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-    padding: 8px 0;
+    gap: 25px;
+    padding: 1%;
+    border:2px solid #bfc2bd;
+    border-radius: 5px;
+    background-color: rgba(168, 110, 4, 0.431);
 }
 
 .step {
     flex: 1 1 190px;
-    min-width: 0;
-
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 22px;
 }
 
 .step-icon {
     width: 56px;
     height: 56px;
-    flex-shrink: 0;
-
-    border: 1px solid  #d7a568;
-    border-radius: 50%;
+    border: 2px solid  #e3e1de86;
+    border-radius: 12px;
     color:  #f0c58c;
-    font-size: 27px;
-
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -526,34 +524,33 @@ section {
 
 .step-text {
     flex: 1;
-    min-width: 0;
 }
 
-.step-text > span {
+.step-text span {
     color: #f0c58c;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
+    font-size: 28px;
 }
 
 .step-text h3 {
-    font-size: 11px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 3px;
 }
 
 .step-text p {
-    color: #bfc2bd;
-    font-size: 9px;
-    line-height: 1.7;
+    color: #eef0ec;
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 .step-arrow {
-    color:  #d7a568;
-    font-size: 22px;
+    color:  #fbf7f7;
+    font-size: 40px;
 }
 
 
-/* BUY WITH CONFIDENCE
+/* BUY WITH CONFIDENCE */
 
 .confidence-section {
     display: flex;
@@ -745,7 +742,7 @@ section {
 
 
 /*  COLLECTOR NOTE*/
-
+/*
 .collector-note {
     text-align: center;
     border-bottom: 1px solid  rgba(215, 165, 104, 0.35);
@@ -826,5 +823,4 @@ section {
 
 .contact-form .gold-btn {
     align-self: flex-start;
-} 
-*/
+}
