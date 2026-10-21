@@ -1,0 +1,650 @@
+.eyebrow {
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover
+ {
+    color: #fffdfb;
+}
+
+.section-heading h2 {
+    color: var(--cream);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+
+
+
+/* ---------- HERO SECTION ---------- */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 45px 6%;
+    background:
+        linear-gradient(90deg,
+        rgba(5, 8, 9, 0.98) 0%,
+        rgba(5, 8, 9, 0.84) 38%,
+        rgba(5, 8, 9, 0.2) 100%),
+        url('../Pic/car-car1\ Large.jpeg') bottom / cover no-repeat;
+        border-top: 1px solid rgb(184, 184, 184);
+    border-bottom: 1px solid rgba(179, 148, 107, 0.463);
+}
+
+.hero-content {
+    flex: 1 1 300px;
+    max-width: 510px;
+
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(48px, 7vw, 86px);
+    font-weight: 600;
+    line-height: 0.91;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #f8f2eb;
+    font-family: fantasy;
+}
+
+.hero-subtitle {
+    color: #e5bd86;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.hero-description {
+    color: #d0cfca;
+    max-width: 420px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+  .btn{
+    padding: 12px 28px;
+    background-color: #3b2418;
+    color: rgb(245, 213, 138);
+    border: 2px solid rgb(196, 154, 74);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  .btn:hover{
+    background-color: #c49a4a;
+    color:#24160f;
+    border-color: #f5d58a;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(245, 243, 245, 0.45);
+  }
+
+.hero-stats {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero-stats div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    border-right: 1px solid  rgba(210, 180, 140, 0.51);
+}
+
+.hero-stats div:last-child {
+    border-right: none;
+}
+
+.hero-stats strong {
+    color:  #e5bd86;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.hero-stats span {
+    color:  #d0cfce;
+    font-size: 10px;
+}
+
+.hero-image {
+    flex: 1 1 280px;
+    max-width: 520px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    object-position: center;
+    filter: drop-shadow(0 15px 25px rgba(3, 3, 3, 0.743));
+}
+
+.image-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.image-caption span {
+    color: #e5bd86;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.image-caption p {
+    color: #d0cfce;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-style: italic;
+}
+
+
+/*SEARCH SECTION */
+
+.search-section {
+    padding: 45px 6%;
+    background-color: #101516;
+    border-bottom: 1px solid  rgba(210, 180, 140, 0.25);
+}
+
+
+.search-section .section-heading h2 {
+    font-size: 38px;
+}
+
+.search-box {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 22px;
+    border: 1px solid  rgba(210, 180, 140, 0.35);
+    background-color: rgb(0, 0, 0);
+    border-radius: 6px;
+}
+
+.search-field {
+    flex: 1 1 155px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-field label
+ {
+    color: #e5bd86;
+    font-size: 11px;
+}
+
+.search-field input,
+.search-field select
+{
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    background-color: #151a1b;
+    color:#f7f6f3;
+    border: 1px solid #353a39;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-field input:focus,
+.search-field select:focus
+{
+    border-color: gold;
+}
+
+.search-field select {
+    cursor: pointer;
+}
+
+.search-btn {
+    flex: 0 1 110px;
+    padding: 12px 15px;
+    background-color: transparent;
+    color:  #e5bd86;
+    border: 1px solid #c99a60;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background-color:#c99a60;
+    color: black;
+}
+
+.search-note {
+    color: whitesmoke;
+    font-size: 14px;
+    margin-top: 15px;
+    font-family: cursive;
+} 
+
+
+
+
+/*CATEGORIES  */
+
+.categories {
+    background-color: #0c1011;
+}
+
+.category-container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.category-card {
+    flex: 1 1 190px;
+    min-width: 0;
+    background-color: #14191a;
+    border: 1px solid #594d1d;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: #c99a60;
+}
+
+.category-image {
+    height: 175px;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.category-card:hover 
+.category-image img {
+    transform: scale(1.05);
+}
+
+.category-info {
+    padding: 17px;
+}
+
+.category-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.category-info p {
+    color:#b5b3ae;
+    font-size: 11px;
+    margin-bottom: 15px;
+    font-family: fantasy;
+}
+
+.category-info span {
+    color:  #e5bd86;
+    font-size: 11px;
+} 
+
+
+/*FEATURED CARS */
+.featured {
+    margin-top: 2%;
+    background-color: #101516;
+    border-top: 1px solid rgba(210, 180, 140, 0.25);
+}
+
+.featured-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.featured-heading .section-heading ,
+.text-link 
+{
+    margin: 25px;
+}
+
+.car-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 0px 1%;
+}
+
+.car-card 
+{
+    flex: 1 1 260px;
+    max-width: 100%;
+    background-color: #0b1011;
+    border: 1px solid #343a38;
+    border-radius: 6px;
+    transition: 0.3s;
+    
+}
+
+.car-card:hover {
+    border-color: #c99a60;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(245, 237, 237, 0.642);
+}
+
+.car-image {
+    height: 220px;
+    position: relative;
+    background-color:black;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.4s;
+}
+
+.car-card:hover .car-image img {
+    transform: scale(1.04);
+}
+
+.car-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 5px 9px;
+    background-color: rgba(8, 12, 12, 0.88);
+    color:#e5bd86;
+    border: 1px solid rgba(210, 180, 140, 0.25);
+    border-radius: 3px;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    background-color: rgba(10, 12, 12, 0.75);
+    color: white;
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+.heart-btn:hover {
+    color: #e49b84;
+    border-color: #e49b84;
+}
+
+
+.car-details {
+    padding: 18px;
+}
+
+.car-year {
+    color:  #e5bd86;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+
+.car-details h3 {
+    color: #f4eee4;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.car-description {
+    color: rgb(184, 184, 184);
+    font-size: 12px;
+    min-height: 62px;
+    margin-bottom: 15px;
+    font-family: fantasy;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+.car-specs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 0;
+    border-top: 1px solid #303534;
+    border-bottom: 1px solid #303534;
+}
+
+.car-specs span {
+    color: #c8c6c0;
+    font-size: 12px;
+    padding-right: 8px;
+    border-right: 1px solid rgb(85, 85, 85);
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+
+.car-specs span:last-child {
+    border-right: none;
+}
+
+.car-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 15px;
+}
+
+.car-bottom div {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-bottom small {
+    color:  #b5b3ae;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.car-bottom strong {
+    color:  #e5bd86;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border: 1px solid ;
+    border-radius: 50%;
+    color:  #e5bd86;
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+.arrow-btn:hover {
+    background-color: #d4aa78;
+    color:black;
+
+}
+
+.price-disclaimer {
+    color: #969993;
+    font-size: 11px;
+    margin-top: 25px;
+} 
+
+
+/*SELL YOUR CAR*/
+
+.sell-banner {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: #171a19;
+    border-top: 1px solid rgba(210, 180, 140, 0.25);
+    border-bottom: 1px solid rgba(210, 180, 140, 0.25);
+}
+
+.sell-image {
+    flex: 1 1 300px;
+    min-width: 0;
+    min-height: 280px;
+}
+
+.sell-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+}
+
+.sell-content {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 45px 6%;
+}
+
+.sell-content h2
+{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+.sell-content p
+{
+    color: white;
+    margin-bottom: 23px;
+    max-width: 500px;
+}
+
+
+/* WHY CHOOSE US*/
+
+
+.why-section {
+    background-color: #0c1011;
+    margin-bottom: 1%;
+    padding:5px 2px;
+  }
+
+.section-heading p{
+  color: white;
+}
+
+.benefits-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit-card {
+    flex: 1 1 190px;
+    min-width: 0;
+    padding: 25px 20px;
+    border: 1px solid rgba(210, 180, 140, 0.25);
+    border-radius: 5px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.benefit-card:hover {
+    border-color: #c99a60;
+    background-color: #171b1a;
+    box-shadow: 2px 4px 14px rgba(184, 184, 184, 0.7);
+}
+
+.benefit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 18px;
+    border: 1px solid #c99a60;
+    border-radius: 50%;
+    color:  #e5bd86;
+    font-size: 26px;
+}
+
+.benefit-card h3 {
+    color:#f4eee4;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    color: #b5b3ae;
+    font-size: 12px;
+} 
+
+/* end */

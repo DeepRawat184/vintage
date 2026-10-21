@@ -149,7 +149,6 @@ color: #d4af37;
 }
 
 .gold-btn
-/* , .outline-btn */
  {
     display: inline-flex;
     align-items: center;
@@ -175,18 +174,6 @@ color: #d4af37;
     box-shadow: 4px 4px 22px rgba(255, 255, 255, 0.511) ;
     transform:translateX(12px)
 }
-
-/* .outline-btn {
-    color:#d5a566 ;
-    background-color: transparent;
-}
-
-.outline-btn:hover {
-    background-color: #d5a566;
-    color: #11100d;
-     box-shadow: 4px 4px 22px rgba(255, 255, 255, 0.511) ;
-    transform:translateY(12px)
-} */
 
 
 
@@ -521,7 +508,7 @@ color: #d4af37;
     border-radius: 5px;
 }
 
-.process-card > span {
+.process-card span {
     color: gold;
     font-family: 'Cormorant Garamond', serif;
     font-size: 38px;
@@ -537,17 +524,15 @@ color: #d4af37;
 }
 
 
-
+/* heritage */
 
 .heritage {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     flex-wrap: wrap;
     gap: 40px;
-
-    background-color: #101517;
+    background-color: rgba(59, 60, 61, 0.408);
 }
 
 .heritage-image {
@@ -571,15 +556,11 @@ color: #d4af37;
     margin-bottom: 20px;
 }
 
-.heritage-content p:not(.eyebrow) {
+.heritage-content p {
     color: whitesmoke;
     font-size: 13px;
 }
 
-
-/*  */
-
-/*  */
 
 
 /* last */
@@ -589,21 +570,22 @@ color: #d4af37;
 
     background-image:
         linear-gradient(
-            rgba(4, 8, 9, 0.86),
-            rgba(4, 8, 9, 0.93)
+            150deg,
+            rgba(4, 8, 9, 0.7) 50%,
+            rgba(228, 233, 236, 0.309)
         ),
-        url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80");
+        url(../pic/911vintage.jpeg);
 
     background-size: cover;
     background-position: center;
 }
 
-.cta > .eyebrow {
+.cta .eyebrow {
     justify-content: center;
 }
 
 .cta h2 {
-    color: var(--light-gold);
+    color: rgb(250, 199, 32);
     margin-bottom: 20px;
 }
 
@@ -621,136 +603,3 @@ color: #d4af37;
 
     margin-top: 25px;
 }
-
-
-
-
-
-
-
-/*  --gold: #d5a566;
-    --light-gold: #efd4a2;
-    --dark-bg: #080d0f;
-    --card-bg: #101719;
-    --border-color: #343638;
-    --text-color: #eeeeee;
-    --muted-color: #b6b7b7;
- */
-
- 
-/* footer */
-
-.footer {
-    background-color: #111;
-    color: #ccc;
-    padding: 40px 8% 10px;
-    border-top: 2px solid #d4af37;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 35px;
-    padding-bottom: 35px;
-}
-
-
-/* Footer Sections */
-.footer-box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    flex: 1;
-    min-width: 180px;
-}
-
-
-/* Website Name */
-.footer-about h2 {
-    color: #d4af37;
-    font-size: 25px;
-    margin: 0;
-    font-family: 'georgia', serif;
-}
-
-.footer-about h2 span {
-    color:white;
-    font-size: 33px;
-    font-family: cursive;
-  }
-
-.footer-about p {
-    line-height: 1.5;
-    max-width: 250px;
-}
-
-/* Headings */
-.footer-box h3 {
-    color: #d4af37;
-    font-size: 22px;
-    margin: 0;
-    text-decoration:underline;
-}
-
-/* Links */
-.footer-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-  .footer-box li {
-      margin-bottom: 10px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-.footer a {
-    color: #ccc;
-    text-decoration: none;
-    transition: 0.2s;
-}
-  .footer a:hover {
-      color: #d4af37;
-  }
-
-/* Paragraphs */
-.footer-box p {
-    margin: 0;
-    line-height: 1.7;
-    
-}
-
-/* Social Media */
-.social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* Btm Footer */
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    border-top: 1px solid #444;
-    padding-top: 20px;
-}
-
-  .footer-bottom p {
-      margin: 0;
-      font-size: 14px;
-  }
-
-  .footer-policy {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-    .footer-policy a {
-        font-size: 14px;
-    }

@@ -2,13 +2,10 @@
 {
   display: flex;
   flex-wrap:wrap;
-
   margin:10px;
   gap:20px;
-
   justify-content:space-between;
   align-items: center; 
-
 }
 
 .logo{
@@ -44,6 +41,7 @@
       }
         .nav-tab a:hover{
           color:rgb(255, 224, 100);
+          border-bottom: 1px solid goldenrod;
         }
 .search{
   display:flex;
@@ -86,10 +84,16 @@
     gap:10px;
     border-radius: 30px;
     cursor:pointer;
+    transition: 0.3s all ease;
   }
   .login button svg{
     display:block;
   }
+    .login button:hover{
+      box-shadow: 4px 4px 20px rgba(234, 178, 23, 0.634);
+      background-color: rgb(204, 157, 39);
+
+    }
 
 nav a {
     font-family: 'Montserrat', sans-serif;
