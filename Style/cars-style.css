@@ -44,7 +44,7 @@ a:hover
         rgba(5, 8, 9, 0.98) 0%,
         rgba(5, 8, 9, 0.84) 38%,
         rgba(5, 8, 9, 0.2) 100%),
-        url('../Pic/car-car1 Large.jpeg') bottom / cover no-repeat;
+        url('../pic/car-car1 Large.jpeg') bottom / cover no-repeat;
         border-top: 1px solid rgb(184, 184, 184);
     border-bottom: 1px solid rgba(179, 148, 107, 0.463);
 }
