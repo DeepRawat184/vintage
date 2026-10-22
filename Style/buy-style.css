@@ -614,7 +614,7 @@ section {
     gap: 13px;
 }
 
-.confidence-point > span {
+.confidence-point span {
     color: #f0c58c;
     font-size: 26px;
 }
