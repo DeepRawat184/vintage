@@ -19,21 +19,21 @@ textarea {
 
 button {
     cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  #d7a568;
+    border-radius: 25px;
+    padding: 10px 23px;
+    font-size: 11px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
+
 
 section {
     scroll-margin-top: 70px;
 }
-
-/* :root {
-    --gold: #d7a568;
-    --gold-light: #f0c58c;
-    --dark: #061112;
-    --card: #091719;
-    --border: rgba(215, 165, 104, 0.35);
-    --muted: #b9b9b2;
-} */
-
 
  /* HERO SECTION */
 .hero {
@@ -58,8 +58,7 @@ section {
 }
 
 .hero-content {
-    width: 100%;
-    max-width: 470px;
+    max-width: 100%;
 }
 
 .eyebrow {
@@ -83,7 +82,7 @@ section {
 
 .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size:50px ;
+    font-size: 50px ;
     line-height: 0.98;
     font-weight: 600;
     letter-spacing: 1px;
@@ -99,15 +98,16 @@ section {
 }
 
 .hero-description {
-    max-width: 390px;
+    max-width: 400px;
     color: #dddcd6;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.8;
     margin: 10px 0 17px;
 }
 
 .hero-features {
     display: flex;
+    max-width: 100%;
     flex-wrap: wrap;
     gap: 15px;
     margin-top: 17px;
@@ -123,17 +123,17 @@ section {
     width: 34px;
     height: 34px;
     border: 1px solid  #d7a568;
-    color: #f0c58c;
+    color: #000000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    flex-shrink: 0;
+    background-color: wheat;
 }
 
 .hero-feature p {
-    font-size: 8px;
+    font-size: 11px;
     color: #c7c7c0;
     line-height: 1.7;
 }
@@ -212,8 +212,8 @@ section {
     color: #1c140a;
     padding: 10px 23px;
     font-size: 11px;
-    font-weight: 600;
     transition: 0.3s ease;
+    font-family: sans-serif;
 }
 
 .search-form .gold-btn {
@@ -252,36 +252,6 @@ section {
 .popular-searches a:hover {
     border-color:  #d7a568;
     color: #f0c58c;
-}
-
-
-/* COMMON SEC. STYLING */
-
-.section-padding {
-    padding: 35px 5.5%;
-}
-
-.section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 17px;
-}
-
-.section-heading h2,
-.confidence-content h2,
-.contact-intro h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size:  30px;
-    line-height: 1.15;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.section-heading .eyebrow {
-    margin-bottom: 4px;
 }
 
 
@@ -420,8 +390,6 @@ section {
     background-color:  #d7a568;
     color: #15100a;
 }
-
-
         /* REQUEST A CAR CARD  */
 .request-card {
     flex: 0 1 190px;
@@ -444,7 +412,7 @@ section {
 }
 
 .request-content {
-    flex: 1;
+    flex: 1 1 40%;
     padding: 14px 10px;
     display: flex;
     flex-direction: column;
@@ -470,15 +438,17 @@ section {
     justify-content: center;
     align-items: center;
      color:  #f0c58c;
-    font-size: 10px;
+    font-size: 15px;
     padding: 9px 17px;
     border: 1px solid  #d7a568;
     border-radius: 25px;
     transition: 0.3s ease;
+    min-width: 100px;
+    font-family: fantasy;
 }
 
 .outline-btn:hover {
-    background-color: #d7a568;
+    background-color: #d7a568be;
     color: #15100a;
 }
 
@@ -489,7 +459,8 @@ section {
     border-top: 1px solid rgb(240, 240, 240);
     border-bottom: 1px solid rgb(240, 240, 240);
     background-color: #071314;
-    margin: 10px 0px;
+    margin: 3% 0px;
+    padding: 2%;
 }
 
 .steps-list {
@@ -523,13 +494,13 @@ section {
 }
 
 .step-text {
-    flex: 1;
+    flex: 1 1;
 }
 
 .step-text span {
-    color: #f0c58c;
+    color: #ffaa00;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .step-text h3 {
@@ -557,27 +528,28 @@ section {
     flex-wrap: wrap;
     border-bottom: 1px solid rgba(215, 165, 104, 0.2);
     background-color: #071314;
+    padding: 1%;
 }
 
 .confidence-image {
-    flex: 1 1 300px;
-    min-width: 0;
-    min-height: 240px;
-    overflow: hidden;
+    flex: 1 1 300px; 
 }
 
 .confidence-image img {
     height: 100%;
     min-height: 240px;
     object-fit: cover;
+    padding: 5%;
+    transform: rotate(-2deg);
+    border-radius: 100px;
+    border:2px double rgba(218, 165, 32, 0.556);
+    background-color: #191c1dc5;
 }
 
 .confidence-content {
     flex: 1.5 1 400px;
     min-width: 0;
-
     padding: 30px 5.5%;
-
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -593,9 +565,9 @@ section {
     margin-bottom: 5px;
 }
 
-.confidence-main > p:not(.eyebrow) {
+.confidence-main  p {
     color: #c9cbc5;
-    font-size: 11px;
+    font-size: 15px;
     margin: 12px 0;
 }
 
@@ -631,9 +603,11 @@ section {
 }
 
 
-/*  TESTIMONIALS 
+/*  TESTIMONIALS */
+
 .testimonials-section {
     border-bottom: 1px solid rgba(215, 165, 104, 0.2);
+    padding: 2% 0% ;
 }
 
 .testimonial-list {
@@ -647,7 +621,7 @@ section {
     padding: 15px;
     border: 1px solid #374142;
     border-radius: 8px;
-    background-color: #071314;
+    background-color: rgb(7, 19, 20);
     display: flex;
     gap: 10px;
 }
@@ -656,14 +630,13 @@ section {
     font-family: Georgia, serif;
     font-size: 38px;
     line-height: 1;
-    color: #f0c58c;
-    flex-shrink: 0;
+    color: rgb(240, 197, 140);
 }
 
 
 .quote {
     color: #d1d1cb;
-    font-size: 10px;
+    font-size: 14px;
     font-style: italic;
     line-height: 1.8;
     margin-bottom: 12px;
@@ -678,9 +651,9 @@ section {
 .reviewer-avatar {
     width: 36px;
     height: 36px;
-    border: 1px solid  #d7a568;
+    border: 1px solid  rgb(215, 165, 104);
     border-radius: 50%;
-    background-color: #25302e;
+    background-color: rgb(37, 48, 46);
     color:  #f0c58c;
     font-size: 11px;
     display: flex;
@@ -692,7 +665,7 @@ section {
 .reviewer p {
     font-size: 9px;
     line-height: 1.6;
-    color: var(--muted);
+    color: whitesmoke;
 }
 
 .reviewer strong {
@@ -704,64 +677,39 @@ section {
     color: #f0c58c;
     letter-spacing: 1px;
 }
-*/
 
-/* SELL YOUR CAR
+
+/* SELL YOUR CAR*/
 
 .sell-section {
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(3, 12, 13, 0.97),
-            rgba(3, 12, 13, 0.65)
-        ),
-        url("https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1600&q=85");
-
+    background-image: url('../pic/fogford.jpeg');
     background-size: cover;
     background-position: center;
     border-bottom: 1px solid  rgba(215, 165, 104, 0.35);
+    padding:3%;
 }
 
 .sell-content {
-    max-width: 520px;
+    text-align: right;
 }
 
 .sell-content h2,
 .collector-note h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(28px, 4vw, 40px);
+    font-size:40px;
     line-height: 1.1;
 }
 
 .sell-content  p {
-    color: #d1d2cc;
+    color: #ffffff;
     font-size: 12px;
     margin: 12px 0 18px;
-    max-width: 420px;
+    background-color: rgba(215, 165, 104, 0.177);
+    padding: 4px;
 }
 
 
-/*  COLLECTOR NOTE*/
-/*
-.collector-note {
-    text-align: center;
-    border-bottom: 1px solid  rgba(215, 165, 104, 0.35);
-    background-color: #091718;
-}
-
-.collector-note .eyebrow {
-    justify-content: center;
-}
-
-.collector-note  p{
-    max-width: 600px;
-    margin: 14px auto 20px;
-    color: #c6c9c3;
-    font-size: 12px;
-}
-*/
-
-/* CONTACT SECTION
+/* CONTACT SECTION */
 
 .contact-section {
     display: flex;
@@ -770,6 +718,7 @@ section {
     gap: 35px;
     background-color: #071314;
     border-bottom: 1px solid  rgba(215, 165, 104, 0.35);
+    padding: 4% 2%;
 }
 
 .contact-intro {
@@ -785,7 +734,7 @@ section {
 }
 
 .contact-form {
-    flex: 1 1 300px;
+    flex:1 1 300px;
     min-width: 0;
 
     display: flex;
