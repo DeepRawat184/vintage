@@ -10,12 +10,12 @@ img {
     object-fit: cover;
 }
 
-button,
+/* button,
 input,
 select,
 textarea {
     font: inherit;
-}
+} */
 
 button {
     cursor: pointer;
@@ -37,6 +37,7 @@ section {
 
  /* HERO SECTION */
 .hero {
+    border-top: 1px solid whitesmoke;
     min-height: 340px;
     padding: 35px 6%;
 
