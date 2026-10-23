@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Your Classic Car | Vintage Garage</title>
 
     <link rel="stylesheet" href="Style/nav.css">
@@ -55,9 +54,7 @@
     </div>
 <!-- nav close -->
 
-    <main>
-
-        <!-- ================= HERO SECTION ================= -->
+        <!--  HERO SECTION  -->
 
         <section class="hero">
 
@@ -85,7 +82,7 @@
         </section>
 
 
-        <!-- ================= BENEFITS ================= -->
+        <!--  BENEFITS  -->
 
         <section class="benefits">
 
@@ -116,8 +113,8 @@
         </section>
 
 
-        <!-- ================= SELLING PROCESS + FORM ================= -->
-
+ <!-- FORM  -->
+                    <!-- selling -->
         <section class="selling-section">
 
             <div class="process-content">
@@ -173,20 +170,14 @@
 
             </div>
 
-
             <div class="process-image" role="img"
                  aria-label="Close-up of a vintage classic car">
             </div>
 
-
-            <!-- LISTING FORM -->
-
+                    <!-- LISTING FORM -->
             <div class="form-column" id="listing-form">
 
-                <form class="listing-form"
-                      action="#"
-                      method="post"
-                      enctype="multipart/form-data">
+                <form class="listing-form">
 
                     <p class="eyebrow">LIST YOUR CAR</p>
 
@@ -199,51 +190,50 @@
 
                     <div class="input-group">
                         <label for="car-name">Car Make &amp; Model *</label>
-                        <input type="text" id="car-name" name="car_name"
+                        <input type="text" id="car-name"
                                placeholder="e.g. Jaguar E-Type" required>
                     </div>
 
                     <div class="input-group">
                         <label for="car-year">Year of Manufacture *</label>
-                        <input type="number" id="car-year" name="car_year"
+                        <input type="number" id="car-year"
                                placeholder="e.g. 1965" min="1886"
                                max="2026" required>
                     </div>
 
                     <div class="input-group">
                         <label for="car-price">Expected Price (INR) *</label>
-                        <input type="number" id="car-price" name="car_price"
+                        <input type="number" id="car-price" 
                                placeholder="Enter your asking price"
                                min="1" required>
                     </div>
 
                     <div class="input-group">
                         <label for="car-photos">Upload Photos (up to 5)</label>
-                        <input type="file" id="car-photos" name="car_photos[]"
-                               accept="image/*" multiple>
+                        <input type="file" id="car-photos" >
                     </div>
 
                     <div class="input-group">
                         <label for="seller-name">Your Name *</label>
-                        <input type="text" id="seller-name" name="seller_name"
+                        <input type="text" id="seller-name"
                                placeholder="Enter your full name" required>
                     </div>
 
                     <div class="input-group">
                         <label for="seller-email">Email Address *</label>
-                        <input type="email" id="seller-email" name="email"
+                        <input type="email" id="seller-email" 
                                placeholder="Enter your email" required>
                     </div>
 
                     <div class="input-group">
                         <label for="seller-phone">Phone Number *</label>
-                        <input type="tel" id="seller-phone" name="phone"
+                        <input type="number" id="seller-phone"
                                placeholder="Enter your phone number" required>
                     </div>
 
                     <div class="input-group">
                         <label for="car-details">Additional Details</label>
-                        <textarea id="car-details" name="details"
+                        <textarea id="car-details" 
                                   placeholder="Condition, mileage, history..."
                                   rows="3"></textarea>
                     </div>
@@ -251,11 +241,6 @@
                     <button type="submit" class="submit-btn">
                         Submit Listing <span>→</span>
                     </button>
-
-                    <p class="privacy-note">
-                        Your details are kept private and secure.
-                    </p>
-
                 </form>
 
             </div>
@@ -263,7 +248,7 @@
         </section>
 
 
-        <!-- ================= STATISTICS ================= -->
+        <!--  STATISTICS  -->
 
         <section class="statistics">
 
@@ -299,50 +284,7 @@
         </section>
 
 
-        <!-- ================= WHY CHOOSE US ================= -->
-
-        <section class="why-section">
-
-            <div class="why-heading">
-                <p class="eyebrow">THE VINTAGE DIFFERENCE</p>
-                <h2>MORE THAN JUST A MARKETPLACE</h2>
-                <p>
-                    Every classic has a story. We help yours find its
-                    next chapter with confidence and care.
-                </p>
-            </div>
-
-            <div class="why-container">
-
-                <div class="why-card">
-                    <span>01</span>
-                    <h3>Expert Guidance</h3>
-                    <p>Get assistance throughout your selling journey,
-                    from listing to final negotiations.</p>
-                </div>
-
-                <div class="why-card">
-                    <span>02</span>
-                    <h3>Passionate Community</h3>
-                    <p>Showcase your automobile to people who
-                    appreciate its heritage and craftsmanship.</p>
-                </div>
-
-                <div class="why-card">
-                    <span>03</span>
-                    <h3>Transparent Deals</h3>
-                    <p>Keep communication clear and make informed
-                    decisions when evaluating offers.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
+    <!--  FOOTER  -->
  <!-- footer start -->
 
     <footer class="footer">
