@@ -69,6 +69,7 @@ p{
 .footer-about p {
     line-height: 1.5;
     max-width: 250px;
+
 }
 
 /* Headings */
@@ -102,8 +103,7 @@ p{
 /* Paragraphs */
 .footer-box p {
     margin: 0;
-    line-height: 1.7;
-    
+    line-height: 1;
 }
 
 /* Social Media */
@@ -128,7 +128,7 @@ p{
 
   .footer-bottom p {
       margin: 0;
-      font-size: 14px;
+      font-size: 12px;
   }
 
   .footer-policy {
@@ -137,5 +137,5 @@ p{
     gap: 20px;
 }
     .footer-policy a {
-        font-size: 14px;
+        font-size: 12px;
     }
