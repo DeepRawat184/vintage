@@ -6,7 +6,6 @@
 
 .left-content{
   flex:1 1 60%;
-  background-color: blue;
   background-image: url('../pic/login-car.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
