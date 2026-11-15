@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <script src="JS/sell.js"></script>
 
     <!-- nav -->
    <div class="top">
@@ -179,7 +180,7 @@
                     <!-- LISTING FORM -->
             <div class="form-column" id="listing-form">
 
-                <form class="listing-form">
+                <form class="listing-form" onsubmit="return check()">
 
                     <p class="eyebrow">LIST YOUR CAR</p>
 
@@ -191,7 +192,7 @@
                     </p>
 
                     <div class="input-group">
-                        <label for="car-name">Car Make &amp; Model *</label>
+                        <label for="car-name">Car Make & Model *</label>
                         <input type="text" id="car-name"
                                placeholder="e.g. Jaguar E-Type" required>
                     </div>
@@ -207,7 +208,7 @@
                         <label for="car-price">Expected Price (INR) *</label>
                         <input type="number" id="car-price" 
                                placeholder="Enter your asking price"
-                               min="1" required>
+                               min="10000" required>
                     </div>
 
                     <div class="input-group">
@@ -219,6 +220,7 @@
                         <label for="seller-name">Your Name *</label>
                         <input type="text" id="seller-name"
                                placeholder="Enter your full name" required>
+                        <p id="name-err" style="color:rgb(255, 42, 42);"></p>
                     </div>
 
                     <div class="input-group">
@@ -231,12 +233,13 @@
                         <label for="seller-phone">Phone Number *</label>
                         <input type="number" id="seller-phone"
                                placeholder="Enter your phone number" required>
+                        <p id="phone-err" style="color:rgb(255, 42, 42);"></p>
                     </div>
 
                     <div class="input-group">
                         <label for="car-details">Additional Details</label>
                         <textarea id="car-details" 
-                                  placeholder="Condition, mileage, history..."
+                                  placeholder="Condition, Mileage, History..."
                                   rows="3"></textarea>
                     </div>
 

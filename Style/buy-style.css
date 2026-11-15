@@ -348,6 +348,10 @@ section {
     color:  #f0c58c;
 }
 
+.favorite.active {
+    color:rgb(255, 79, 79);
+}
+
 .car-details {
     padding: 9px 10px 10px;
 }

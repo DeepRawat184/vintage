@@ -407,7 +407,7 @@ a:hover {
     right: 10px;
     width: 34px;
     height: 34px;
-    background-color: rgba(10, 12, 12, 0.75);
+    background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.45);
     border-radius: 50%;
     color: rgb(255, 255, 255);
@@ -418,6 +418,10 @@ a:hover {
 .heart-btn:hover {
     color: rgb(228, 155, 132);
     border-color: rgb(228, 155, 132);
+}
+.heart-btn.active 
+{
+    color:red;
 }
 
 .car-details {
